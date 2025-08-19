@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
 import { personalInfo, navigationItems } from "../data/portfolio-data";
-import { FiMail, FiPhone, FiLinkedin } from "react-icons/fi";
 
 const Sidebar = () => {
   return (
-    <aside className="bg-gray-900 text-white w-64 min-h-screen p-8 flex flex-col justify-between">
+    <aside className="bg-gray-900 text-white w-64 h-screen p-8 flex flex-col justify-between border-r border-gray-800 fixed">
       <div>
         <div className="text-center mb-10">
           <h1 className="text-3xl font-bold text-blue-400">{personalInfo.name}</h1>
@@ -26,20 +25,6 @@ const Sidebar = () => {
             ))}
           </ul>
         </nav>
-      </div>
-      <div className="text-center text-gray-400">
-        <div className="flex justify-center space-x-4 mb-4">
-          <a href={`mailto:${personalInfo.email}`} className="hover:text-blue-400">
-            <FiMail size={20} />
-          </a>
-          <a href={`tel:${personalInfo.phone}`} className="hover:text-blue-400">
-            <FiPhone size={20} />
-          </a>
-          <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
-            <FiLinkedin size={20} />
-          </a>
-        </div>
-        <p className="text-sm">&copy; {new Date().getFullYear()} {personalInfo.name}</p>
       </div>
     </aside>
   );
