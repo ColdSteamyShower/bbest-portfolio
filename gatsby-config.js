@@ -9,10 +9,13 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Brennan Best Portfolio`,
-    description: `Learn all about Brennan Best's work experience and projects!`,
-    author: `bbest`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Brennan A. Best - Software Engineer`,
+    description: `Professional portfolio of Brennan A. Best, Software Engineer with expertise in full-stack development, DevOps, and team leadership. Explore my professional experience, projects, and technical skills.`,
+    author: `Brennan A. Best`,
+    email: `bbest@chapman.edu`,
+    phone: `916-257-0302`,
+    linkedin: `https://linkedin.com/in/brennan-best`,
+    siteUrl: `https://brennanbest.dev/`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -29,13 +32,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Brennan A. Best - Software Engineer Portfolio`,
+        short_name: `Brennan Best`,
         start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        background_color: `#1a1a1a`,
+        theme_color: `#3b82f6`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
